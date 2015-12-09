@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%= title %></title>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+	<h1><%= title %></h1>
+	<form method="post" action="upload" enctype="multipart/form-data">
+		<div class="form-line">
+			<input type="text" name="photo[name]" />
+		</div>
+		<div class="form-line">
+			<input type="file" name="photo[file]" />
+		</div>
+		<div class="form-line">
+			<input type="submit">
+		</div>
+	</form>
+</body>
+</html>
